@@ -22,19 +22,6 @@
             <div class="col-6 p-2">
                 <a href="{{ route('acList') }}" class="btn btn-success">Account List</a>
             </div>
-            @php
-                if(isset($data)):
-                    $amount     = $data->amount;
-                    $details    = $data->details;
-                    $txnType    = $data->txnType;
-                    $dcId       = $data->id;
-                else:
-                    $amount     = "";
-                    $details    = "";
-                    $txnType    = "";
-                    $dcId       = "";
-                endif;
-            @endphp
             <form class="row g-3 card-body" method="POST" action="{{ route('saveAccount') }}">
                 @csrf
                 <div class="col-12">

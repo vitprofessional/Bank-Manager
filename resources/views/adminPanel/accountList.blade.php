@@ -19,6 +19,9 @@
                             </div>
                         @endif
                     </div>
+                    <div class="col-6">
+                        <a class="btn btn-success btn-sm noprint mx-auto" href="{{ route('accountCreation') }}"><i class="fas fa-plus"></i> Add New</a>
+                    </div>
                 </div>
                 <table class="table table-striped">
                     <thead>
